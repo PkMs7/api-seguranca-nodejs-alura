@@ -1,0 +1,216 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2024-05-16T18:19:27.246Z",
+    "__export_source": "insomnia.desktop.app:v9.2.0",
+    "resources": [
+        {
+            "_id": "req_caede528855d4741b9d674ea5378c7f0",
+            "parentId": "fld_f86236887e224dbcbedb2ec110305373",
+            "modified": 1715883130696,
+            "created": 1715881901997,
+            "url": "http://localhost:3000/produto",
+            "name": "Cadastrar Produtos",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"nome\": \"Produto Teste 3\",\n\t\"descricao\": \"Descricao Teste 3\",\n\t\"preco\": 12.00\n}\n"
+            },
+            "preRequestScript": "",
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.2.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1715882965207,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_f86236887e224dbcbedb2ec110305373",
+            "parentId": "wrk_59f445ec26d64be88f6e05aa10a18c28",
+            "modified": 1715882956621,
+            "created": 1715882956621,
+            "name": "Produtos",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1715882956621,
+            "_type": "request_group"
+        },
+        {
+            "_id": "wrk_59f445ec26d64be88f6e05aa10a18c28",
+            "parentId": null,
+            "modified": 1715880351318,
+            "created": 1715880351318,
+            "name": "Rotas da Aplicação",
+            "description": "",
+            "scope": "collection",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_1d4f714969e245cdbb8068429e80ccdf",
+            "parentId": "fld_f86236887e224dbcbedb2ec110305373",
+            "modified": 1715882995110,
+            "created": 1715880408314,
+            "url": "http://localhost:3000/produto",
+            "name": "Consultar Produtos",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "preRequestScript": "",
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.2.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1715882965107,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_0f1a38d4953b473b985451c3b2e00cce",
+            "parentId": "fld_f86236887e224dbcbedb2ec110305373",
+            "modified": 1715883374687,
+            "created": 1715883143726,
+            "url": "http://localhost:3000/produto/id/{id}",
+            "name": "Consultar Produto por Id",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "preRequestScript": "",
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.2.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1715882965007,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_c1d108ddf3714149b2fc87a7158a9886",
+            "parentId": "fld_f86236887e224dbcbedb2ec110305373",
+            "modified": 1715883492525,
+            "created": 1715883439530,
+            "url": "http://localhost:3000/produto/id/{id}",
+            "name": "Atualizar Produto por Id",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"nome\": \"\",\n\t\"descricao\": \"\",\n\t\"preco\": 0.00\n}"
+            },
+            "preRequestScript": "",
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.2.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1715860314044,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_929cade7d0fc47c09840a5741a31ff28",
+            "parentId": "fld_f86236887e224dbcbedb2ec110305373",
+            "modified": 1715883464846,
+            "created": 1715883408275,
+            "url": "http://localhost:3000/produto/id/{id}",
+            "name": "Deletar Produto por Id",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "preRequestScript": "",
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.2.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1715837663081,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_35dc14ea29516ad83dfe221696e12bfbef3a7c40",
+            "parentId": "wrk_59f445ec26d64be88f6e05aa10a18c28",
+            "modified": 1715880351323,
+            "created": 1715880351323,
+            "name": "Base Environment",
+            "data": {},
+            "dataPropertyOrder": null,
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1715880351323,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_35dc14ea29516ad83dfe221696e12bfbef3a7c40",
+            "parentId": "wrk_59f445ec26d64be88f6e05aa10a18c28",
+            "modified": 1715880351334,
+            "created": 1715880351334,
+            "name": "Default Jar",
+            "cookies": [],
+            "_type": "cookie_jar"
+        }
+    ]
+}
