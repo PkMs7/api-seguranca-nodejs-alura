@@ -43,6 +43,20 @@ class UsuariosService {
 
     }
 
+    async buscarUsuarioPorId(id) {
+        const usuario = await database.usuarios.findOne({
+            where: {
+                id: id
+            }
+        })
+
+        if (!usuario) {
+            throw new Error('Usuário informado não cadastrado!')
+        }
+
+        return usuario
+    }
+
 }
 
 module.exports = UsuariosService

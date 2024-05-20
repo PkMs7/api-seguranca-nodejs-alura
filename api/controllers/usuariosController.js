@@ -29,6 +29,23 @@ class UsuariosController {
 
     }
 
+    static async buscarUsuarioPorId(req, res) {
+
+        try {
+            
+            const { id } = req.params
+            const usuarios = await usuariosService.buscarUsuarioPorId(id)
+
+            res.status(200).json(usuarios)
+
+        } catch (error) {
+
+            res.status(400).send({ message: error.message })
+            
+        }
+
+    }
+
 }
 
 module.exports = UsuariosController
