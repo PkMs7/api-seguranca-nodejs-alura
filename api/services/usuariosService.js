@@ -57,6 +57,27 @@ class UsuariosService {
         return usuario
     }
 
+    async editarUsuario(dto) {
+
+        const usuario = await this.buscarUsuarioPorId(dto.id)
+
+        try {
+
+            usuario.nome = dto.nome
+            usuario.email = dto.email
+
+            await usuario.save()
+            
+            return usuario
+            
+        } catch (error) {
+
+            throw new Error('Usuário não pôde ser editado!')
+            
+        }
+
+    }
+
 }
 
 module.exports = UsuariosService

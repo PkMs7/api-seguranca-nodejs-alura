@@ -46,6 +46,24 @@ class UsuariosController {
 
     }
 
+    static async editarUsuario(req, res) {
+        const { id } = req.params
+        const { nome , email } = req.body
+
+        try {
+
+            const usuario = await usuariosService.editarUsuario({ id, nome, email })
+    
+            res.status(200).send(usuario)
+            
+        } catch (error) {
+
+            res.status(400).send({ message: error.message })
+            
+        }
+
+    }
+
 }
 
 module.exports = UsuariosController
