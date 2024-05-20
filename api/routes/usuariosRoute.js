@@ -1,9 +1,10 @@
 const { Router } = require('express')
+const UsuariosController = require('../controllers/usuariosController')
 
 const router = Router()
 
 router
-    .post('/usuarios')
+    .post('/usuarios', UsuariosController.cadastrar)
     .get('/usuarios')
     .get('/usuarios/id/:id')
     .put('/usuarios/id/:id')

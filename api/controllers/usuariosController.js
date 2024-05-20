@@ -4,7 +4,7 @@ const usuariosService = new UsuariosService()
 
 class UsuariosController {
 
-    async cadastrar(req, res) {
+    static async cadastrar(req, res) {
         const { nome , email, senha} = req.body
 
         try {
