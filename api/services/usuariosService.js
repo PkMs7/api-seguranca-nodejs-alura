@@ -36,6 +36,13 @@ class UsuariosService {
 
     }
 
+    async buscarTodosUsuarios() {
+
+        const usuarios = await database.usuarios.findAll()
+        return usuarios
+
+    }
+
 }
 
 module.exports = UsuariosService

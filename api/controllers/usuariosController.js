@@ -21,6 +21,14 @@ class UsuariosController {
 
     }
 
+    static async buscarTodosUsuarios(req, res) {
+
+        const usuarios = await usuariosService.buscarTodosUsuarios()
+
+        res.status(200).json(usuarios)
+
+    }
+
 }
 
 module.exports = UsuariosController
