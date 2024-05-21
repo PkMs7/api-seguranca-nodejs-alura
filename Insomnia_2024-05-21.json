@@ -1,13 +1,72 @@
 {
     "_type": "export",
     "__export_format": 4,
-    "__export_date": "2024-05-20T13:43:08.848Z",
+    "__export_date": "2024-05-21T20:50:34.869Z",
     "__export_source": "insomnia.desktop.app:v9.2.0",
     "resources": [
         {
+            "_id": "req_4756ada194fb45de914bde7765d35b0b",
+            "parentId": "fld_7a60eb728ca84908b29730a311005eb9",
+            "modified": 1716322408402,
+            "created": 1716321829494,
+            "url": "http://localhost:3000/auth/login",
+            "name": "Autenticação Login Usuários",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"email\": \"patrick@teste.com.br\",\n\t\"senha\": \"teste123\"\n}"
+            },
+            "preRequestScript": "",
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.2.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1716321829494,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_7a60eb728ca84908b29730a311005eb9",
+            "parentId": "wrk_59f445ec26d64be88f6e05aa10a18c28",
+            "modified": 1716321825333,
+            "created": 1716321825333,
+            "name": "Login",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1716321825334,
+            "_type": "request_group"
+        },
+        {
+            "_id": "wrk_59f445ec26d64be88f6e05aa10a18c28",
+            "parentId": null,
+            "modified": 1715880351318,
+            "created": 1715880351318,
+            "name": "Rotas da Aplicação",
+            "description": "",
+            "scope": "collection",
+            "_type": "workspace"
+        },
+        {
             "_id": "req_caede528855d4741b9d674ea5378c7f0",
             "parentId": "fld_f86236887e224dbcbedb2ec110305373",
-            "modified": 1716212409955,
+            "modified": 1716319341685,
             "created": 1715881901997,
             "url": "http://localhost:3000/produto",
             "name": "Cadastrar Produto",
@@ -15,7 +74,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\"nome\": \"Produto Teste 3\",\n\t\"descricao\": \"Descricao Teste 3\",\n\t\"preco\": 12.00\n}\n"
+                "text": "{\n\t\"nome\": \"\",\n\t\"descricao\": \"\",\n\t\"preco\": 0.00\n}\n"
             },
             "preRequestScript": "",
             "parameters": [],
@@ -52,16 +111,6 @@
             "environmentPropertyOrder": null,
             "metaSortKey": -1715882956621,
             "_type": "request_group"
-        },
-        {
-            "_id": "wrk_59f445ec26d64be88f6e05aa10a18c28",
-            "parentId": null,
-            "modified": 1715880351318,
-            "created": 1715880351318,
-            "name": "Rotas da Aplicação",
-            "description": "",
-            "scope": "collection",
-            "_type": "workspace"
         },
         {
             "_id": "req_1d4f714969e245cdbb8068429e80ccdf",
@@ -193,7 +242,7 @@
         {
             "_id": "req_41c9e79267b54fb0a9ccbc4477e5ef7e",
             "parentId": "fld_f1265f544ad3464f9d1b9f5aee875ec9",
-            "modified": 1716212510300,
+            "modified": 1716301236159,
             "created": 1716212395076,
             "url": "http://localhost:3000/usuarios",
             "name": "Cadastrar Usuário",
@@ -201,7 +250,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\"nome\": \"nome do usuário\",\n\t\"email\": \"email do usuário\",\n\t\"senha\": \"senha do usuário\"\n}\n"
+                "text": "{\n\t\"nome\": \"Patrick Teste Deletar\",\n\t\"email\": \"patricktestedeletar@teste.com.br\",\n\t\"senha\": \"teste123\"\n}\n"
             },
             "preRequestScript": "",
             "parameters": [],
@@ -242,7 +291,7 @@
         {
             "_id": "req_e85868a716084ab7b2e386046c610efb",
             "parentId": "fld_f1265f544ad3464f9d1b9f5aee875ec9",
-            "modified": 1716212528944,
+            "modified": 1716324527448,
             "created": 1716212395072,
             "url": "http://localhost:3000/usuarios",
             "name": "Consultar Usuários",
@@ -257,7 +306,10 @@
                     "value": "insomnia/9.2.0"
                 }
             ],
-            "authentication": {},
+            "authentication": {
+                "type": "bearer",
+                "token": ""
+            },
             "metaSortKey": -1715882965107,
             "isPrivate": false,
             "pathParameters": [],
@@ -272,7 +324,7 @@
         {
             "_id": "req_57c90587d308420abcb41eba33bd0482",
             "parentId": "fld_f1265f544ad3464f9d1b9f5aee875ec9",
-            "modified": 1716212539512,
+            "modified": 1716324541090,
             "created": 1716212395078,
             "url": "http://localhost:3000/usuarios/id/{id}",
             "name": "Consultar Usuários por Id",
@@ -302,7 +354,7 @@
         {
             "_id": "req_eb91f9194c394091b782a2d89249950d",
             "parentId": "fld_f1265f544ad3464f9d1b9f5aee875ec9",
-            "modified": 1716212550845,
+            "modified": 1716324550886,
             "created": 1716212395081,
             "url": "http://localhost:3000/usuarios/id/{id}",
             "name": "Atualizar Usuários por Id",
@@ -310,7 +362,7 @@
             "method": "PUT",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\"nome\": \"nome do usuário\",\n\t\"email\": \"email do usuário\",\n\t\"senha\": \"senha do usuário\"\n}"
+                "text": "{\n\t\"nome\": \"Patrick Teste Edit\",\n\t\"email\": \"patrick@teste.com.br\",\n\t\"senha\": \"teste123\"\n}"
             },
             "preRequestScript": "",
             "parameters": [],
@@ -339,7 +391,7 @@
         {
             "_id": "req_8b1327f4278e422090f1ecffd90a4912",
             "parentId": "fld_f1265f544ad3464f9d1b9f5aee875ec9",
-            "modified": 1716212559059,
+            "modified": 1716324558546,
             "created": 1716212395079,
             "url": "http://localhost:3000/usuarios/id/{id}",
             "name": "Deletar Usuários por Id",
