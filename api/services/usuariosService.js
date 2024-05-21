@@ -78,6 +78,30 @@ class UsuariosService {
 
     }
 
+    async deletarUsuario(id) {
+
+        await this.buscarUsuarioPorId(id)
+
+        try {
+
+            await database.usuarios.destroy({
+
+                where: {
+                    id: id
+                }
+
+            })
+
+        } catch (error) {
+
+            throw new Error('Erro ao tentar deletar o usuario!')
+
+        }
+        
+    }
+
 }
+
+
 
 module.exports = UsuariosService
