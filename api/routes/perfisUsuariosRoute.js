@@ -1,9 +1,10 @@
-const { Router } = requiere('express')
+const { Router } = require('express')
+const PerfisUsuariosController = require('../controllers/perfisUsuariosController')
 
 const router = Router()
 
 router
-    .post('/perfisUsuarios')
+    .post('/perfisUsuarios', PerfisUsuariosController.cadastrar)
     .get('/perfisUsuarios')
     .get('/perfisUsuarios/id/:id')
     .put('/perfisUsuarios/id/:id')
