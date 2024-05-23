@@ -1,7 +1,7 @@
 {
     "_type": "export",
     "__export_format": 4,
-    "__export_date": "2024-05-21T20:50:34.869Z",
+    "__export_date": "2024-05-23T17:44:34.763Z",
     "__export_source": "insomnia.desktop.app:v9.2.0",
     "resources": [
         {
@@ -44,13 +44,13 @@
         {
             "_id": "fld_7a60eb728ca84908b29730a311005eb9",
             "parentId": "wrk_59f445ec26d64be88f6e05aa10a18c28",
-            "modified": 1716321825333,
+            "modified": 1716485051772,
             "created": 1716321825333,
             "name": "Login",
             "description": "",
             "environment": {},
             "environmentPropertyOrder": null,
-            "metaSortKey": -1716321825334,
+            "metaSortKey": -1716321825634,
             "_type": "request_group"
         },
         {
@@ -103,13 +103,13 @@
         {
             "_id": "fld_f86236887e224dbcbedb2ec110305373",
             "parentId": "wrk_59f445ec26d64be88f6e05aa10a18c28",
-            "modified": 1715882956621,
+            "modified": 1716485055904,
             "created": 1715882956621,
             "name": "Produtos",
             "description": "",
             "environment": {},
             "environmentPropertyOrder": null,
-            "metaSortKey": -1715882956621,
+            "metaSortKey": -1716321825584,
             "_type": "request_group"
         },
         {
@@ -279,13 +279,13 @@
         {
             "_id": "fld_f1265f544ad3464f9d1b9f5aee875ec9",
             "parentId": "wrk_59f445ec26d64be88f6e05aa10a18c28",
-            "modified": 1716212395069,
+            "modified": 1716485070325,
             "created": 1716212395069,
             "name": "Usuários",
             "description": "",
             "environment": {},
             "environmentPropertyOrder": null,
-            "metaSortKey": -1715837656212.5,
+            "metaSortKey": -1716321825559,
             "_type": "request_group"
         },
         {
@@ -395,6 +395,185 @@
             "created": 1716212395079,
             "url": "http://localhost:3000/usuarios/id/{id}",
             "name": "Deletar Usuários por Id",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "preRequestScript": "",
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.2.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1715837663081,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_07846c3314664e31a4c34203d074243d",
+            "parentId": "fld_aa912cca1dcd4b399b889da84c7f0ec0",
+            "modified": 1716485284779,
+            "created": 1716485104565,
+            "url": "http://localhost:3000/perfisUsuarios",
+            "name": "Cadastrar Perfil de Usuário",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"nome\": \"\",\n\t\"descricao\": \"\"\n}\n"
+            },
+            "preRequestScript": "",
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.2.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1715882965207,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_aa912cca1dcd4b399b889da84c7f0ec0",
+            "parentId": "wrk_59f445ec26d64be88f6e05aa10a18c28",
+            "modified": 1716485104561,
+            "created": 1716485104561,
+            "name": "Perfis de Usuários",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1716057090681.5,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_36d20fa7436f4fb78ea8cc6d147c46dc",
+            "parentId": "fld_aa912cca1dcd4b399b889da84c7f0ec0",
+            "modified": 1716485291659,
+            "created": 1716485104563,
+            "url": "http://localhost:3000/perfisUsuarios",
+            "name": "Consultar Perfis de Usuários",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "preRequestScript": "",
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.2.0"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": ""
+            },
+            "metaSortKey": -1715882965107,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_9326b9ac62c9482ab7190e74986449af",
+            "parentId": "fld_aa912cca1dcd4b399b889da84c7f0ec0",
+            "modified": 1716485299467,
+            "created": 1716485104567,
+            "url": "http://localhost:3000/perfisUsuarios/id/{id}",
+            "name": "Consultar Perfis de Usuários por Id",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "preRequestScript": "",
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.2.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1715882965007,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_763b2e71669243b9b980024351ef5d66",
+            "parentId": "fld_aa912cca1dcd4b399b889da84c7f0ec0",
+            "modified": 1716485347279,
+            "created": 1716485104573,
+            "url": "http://localhost:3000/perfisUsuarios/id/{id}",
+            "name": "Atualizar Perfis de Usuários por Id",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"nome\": \"\",\n\t\"descricao\": \"\"\n}"
+            },
+            "preRequestScript": "",
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.2.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1715860314044,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_dffb7706d3664ae29fab94dfcf60c0d5",
+            "parentId": "fld_aa912cca1dcd4b399b889da84c7f0ec0",
+            "modified": 1716485333944,
+            "created": 1716485104570,
+            "url": "http://localhost:3000/perfisUsuarios/id/{id}",
+            "name": "Deletar Perfis de Usuários por Id",
             "description": "",
             "method": "DELETE",
             "body": {},
