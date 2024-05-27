@@ -19,6 +19,14 @@ class PerfisUsuariosController {
 
     }
 
+    static async buscarTodosPerfisDeUsuarios(req, res){
+
+        const perfisDeUsuarios = await perfisUsuarios.buscarTodosPerfisDeUsuarios()
+
+        res.status(200).json(perfisDeUsuarios)
+
+    }
+
 }
 
 module.exports = PerfisUsuariosController

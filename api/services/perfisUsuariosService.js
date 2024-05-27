@@ -37,6 +37,14 @@ class PerfisUsuariosService {
 
     }
 
+    async buscarTodosPerfisDeUsuarios(){
+
+        const perfisDeUsuarios = await database.perfisUsuarios.findAll()
+
+        return perfisDeUsuarios
+
+    }
+
 }
 
 module.exports = PerfisUsuariosService

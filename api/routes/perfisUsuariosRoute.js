@@ -5,7 +5,7 @@ const router = Router()
 
 router
     .post('/perfisUsuarios', PerfisUsuariosController.cadastrar)
-    .get('/perfisUsuarios')
+    .get('/perfisUsuarios', PerfisUsuariosController.buscarTodosPerfisDeUsuarios)
     .get('/perfisUsuarios/id/:id')
     .put('/perfisUsuarios/id/:id')
     .delete('/perfisUsuarios/id/:id')
