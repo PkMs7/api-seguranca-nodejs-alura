@@ -84,6 +84,28 @@ class PerfisUsuariosService {
 
     }
 
+    async deletarPerfilDeUsuario(id) {
+
+        await this.buscarPerfilDeUsuarioPorId(id)
+
+        try {
+
+            await database.perfisUsuarios.destroy({
+
+                where: {
+                    id: id
+                }
+
+            })
+            
+        } catch (error) {
+
+            throw new Error('Erro ao tentar deletar o perfil de usuário!')
+            
+        }
+
+    }
+
 }
 
 module.exports = PerfisUsuariosService

@@ -63,6 +63,24 @@ class PerfisUsuariosController {
 
     }
 
+    static async deletarPerfilDeUsuario(req, res) {
+
+        const { id } = req.params
+
+        try {
+
+            await perfisUsuarios.deletarPerfilDeUsuario(id)
+
+            res.status(200).send({ message: 'Usuario deletado com sucesso' })
+            
+        } catch (error) {
+
+            res.status(400).send({ message: error.message })
+            
+        }
+
+    }
+
 }
 
 module.exports = PerfisUsuariosController
