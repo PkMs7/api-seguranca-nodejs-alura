@@ -45,6 +45,24 @@ class PerfisUsuariosService {
 
     }
 
+    async buscarPerfilDeUsuarioPorId(id){
+
+        const perfilDeUsuario = await database.perfisUsuarios.findOne({
+            where: {
+                id: id
+            }
+        })
+
+        if (!perfilDeUsuario) {
+
+            throw new Error('Perfil de usuário não cadastrado!')
+
+        }
+
+        return perfilDeUsuario
+
+    }
+
 }
 
 module.exports = PerfisUsuariosService
