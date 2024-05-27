@@ -7,7 +7,7 @@ router
     .post('/perfisUsuarios', PerfisUsuariosController.cadastrar)
     .get('/perfisUsuarios', PerfisUsuariosController.buscarTodosPerfisDeUsuarios)
     .get('/perfisUsuarios/id/:id', PerfisUsuariosController.buscarPerfilDeUsuarioPorId)
-    .put('/perfisUsuarios/id/:id')
+    .put('/perfisUsuarios/id/:id', PerfisUsuariosController.editarPerfilDeUsuario)
     .delete('/perfisUsuarios/id/:id')
 
 module.exports = router

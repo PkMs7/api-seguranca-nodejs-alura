@@ -63,6 +63,27 @@ class PerfisUsuariosService {
 
     }
 
+    async editarPerfilDeUsuario(dto) {
+
+        const perfilDeUsuario = await this.buscarPerfilDeUsuarioPorId(dto.id)
+
+        try {
+
+            perfilDeUsuario.nome = dto.nome
+            perfilDeUsuario.descricao = dto.descricao
+
+            await perfilDeUsuario.save()
+
+            return perfilDeUsuario
+            
+        } catch (error) {
+
+            throw new Error('Perfil de usuário não pôde ser editado!')
+            
+        }
+
+    }
+
 }
 
 module.exports = PerfisUsuariosService

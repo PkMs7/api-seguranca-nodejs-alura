@@ -44,6 +44,25 @@ class PerfisUsuariosController {
 
     }
 
+    static async editarPerfilDeUsuario(req, res) {
+
+        const { id } = req.params
+        const { nome, descricao } = req.body
+
+        try {
+
+            const perfilDeUsuario = await perfisUsuarios.editarPerfilDeUsuario({ id, nome, descricao })
+
+            res.status(200).send(perfilDeUsuario)
+            
+        } catch (error) {
+
+            res.status(400).send({ message: error.message })
+            
+        }
+
+    }
+
 }
 
 module.exports = PerfisUsuariosController
