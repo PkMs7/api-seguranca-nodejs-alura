@@ -1,9 +1,10 @@
 const { Router } = require('express')
+const PermissoesController = require('../controllers/permissoesController')
 
 const router = Router()
 
 router
-    .post('/permissoes')
+    .post('/permissoes', PermissoesController.cadastrar)
     .get('/permissoes')
     .get('/permissoes/id/:id')
     .put('/permissoes/id/:id')
