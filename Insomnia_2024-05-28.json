@@ -1,13 +1,13 @@
 {
     "_type": "export",
     "__export_format": 4,
-    "__export_date": "2024-05-23T17:44:34.763Z",
+    "__export_date": "2024-05-28T13:26:21.452Z",
     "__export_source": "insomnia.desktop.app:v9.2.0",
     "resources": [
         {
             "_id": "req_4756ada194fb45de914bde7765d35b0b",
             "parentId": "fld_7a60eb728ca84908b29730a311005eb9",
-            "modified": 1716322408402,
+            "modified": 1716902708634,
             "created": 1716321829494,
             "url": "http://localhost:3000/auth/login",
             "name": "Autenticação Login Usuários",
@@ -15,7 +15,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\"email\": \"patrick@teste.com.br\",\n\t\"senha\": \"teste123\"\n}"
+                "text": "{\n\t\"email\": \"\",\n\t\"senha\": \"\"\n}"
             },
             "preRequestScript": "",
             "parameters": [],
@@ -44,13 +44,13 @@
         {
             "_id": "fld_7a60eb728ca84908b29730a311005eb9",
             "parentId": "wrk_59f445ec26d64be88f6e05aa10a18c28",
-            "modified": 1716485051772,
+            "modified": 1716902222086,
             "created": 1716321825333,
             "name": "Login",
             "description": "",
             "environment": {},
             "environmentPropertyOrder": null,
-            "metaSortKey": -1716321825634,
+            "metaSortKey": -1716902213525,
             "_type": "request_group"
         },
         {
@@ -103,13 +103,13 @@
         {
             "_id": "fld_f86236887e224dbcbedb2ec110305373",
             "parentId": "wrk_59f445ec26d64be88f6e05aa10a18c28",
-            "modified": 1716485055904,
+            "modified": 1716902225005,
             "created": 1715882956621,
             "name": "Produtos",
             "description": "",
             "environment": {},
             "environmentPropertyOrder": null,
-            "metaSortKey": -1716321825584,
+            "metaSortKey": -1716902213475,
             "_type": "request_group"
         },
         {
@@ -242,7 +242,7 @@
         {
             "_id": "req_41c9e79267b54fb0a9ccbc4477e5ef7e",
             "parentId": "fld_f1265f544ad3464f9d1b9f5aee875ec9",
-            "modified": 1716301236159,
+            "modified": 1716902667574,
             "created": 1716212395076,
             "url": "http://localhost:3000/usuarios",
             "name": "Cadastrar Usuário",
@@ -250,7 +250,7 @@
             "method": "POST",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\"nome\": \"Patrick Teste Deletar\",\n\t\"email\": \"patricktestedeletar@teste.com.br\",\n\t\"senha\": \"teste123\"\n}\n"
+                "text": "{\n\t\"nome\": \"\",\n\t\"email\": \"\",\n\t\"senha\": \"\"\n}\n"
             },
             "preRequestScript": "",
             "parameters": [],
@@ -279,13 +279,13 @@
         {
             "_id": "fld_f1265f544ad3464f9d1b9f5aee875ec9",
             "parentId": "wrk_59f445ec26d64be88f6e05aa10a18c28",
-            "modified": 1716485070325,
+            "modified": 1716902227681,
             "created": 1716212395069,
             "name": "Usuários",
             "description": "",
             "environment": {},
             "environmentPropertyOrder": null,
-            "metaSortKey": -1716321825559,
+            "metaSortKey": -1716902213450,
             "_type": "request_group"
         },
         {
@@ -354,7 +354,7 @@
         {
             "_id": "req_eb91f9194c394091b782a2d89249950d",
             "parentId": "fld_f1265f544ad3464f9d1b9f5aee875ec9",
-            "modified": 1716324550886,
+            "modified": 1716902681627,
             "created": 1716212395081,
             "url": "http://localhost:3000/usuarios/id/{id}",
             "name": "Atualizar Usuários por Id",
@@ -362,7 +362,7 @@
             "method": "PUT",
             "body": {
                 "mimeType": "application/json",
-                "text": "{\n\t\"nome\": \"Patrick Teste Edit\",\n\t\"email\": \"patrick@teste.com.br\",\n\t\"senha\": \"teste123\"\n}"
+                "text": "{\n\t\"nome\": \"\",\n\t\"email\": \"\",\n\t\"senha\": \"\"\n}"
             },
             "preRequestScript": "",
             "parameters": [],
@@ -421,7 +421,7 @@
         {
             "_id": "req_07846c3314664e31a4c34203d074243d",
             "parentId": "fld_aa912cca1dcd4b399b889da84c7f0ec0",
-            "modified": 1716485284779,
+            "modified": 1716902584199,
             "created": 1716485104565,
             "url": "http://localhost:3000/perfisUsuarios",
             "name": "Cadastrar Perfil de Usuário",
@@ -443,7 +443,10 @@
                     "value": "insomnia/9.2.0"
                 }
             ],
-            "authentication": {},
+            "authentication": {
+                "type": "bearer",
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImJkODA4YWMxLWU0ZTktNGRiMS04ZWM4LTQzMzA2YWM4NjUxOSIsImVtYWlsIjoicGF0cmlja0B0ZXN0ZS5jb20uYnIiLCJpYXQiOjE3MTY4MzU3NzEsImV4cCI6MTcxNjkyMjE3MX0.QBoa0R4H_FcION5emas-lhAc9rkJN6URyibnlUYvDK4"
+            },
             "metaSortKey": -1715882965207,
             "isPrivate": false,
             "pathParameters": [],
@@ -458,19 +461,19 @@
         {
             "_id": "fld_aa912cca1dcd4b399b889da84c7f0ec0",
             "parentId": "wrk_59f445ec26d64be88f6e05aa10a18c28",
-            "modified": 1716485104561,
+            "modified": 1716902229944,
             "created": 1716485104561,
             "name": "Perfis de Usuários",
             "description": "",
             "environment": {},
             "environmentPropertyOrder": null,
-            "metaSortKey": -1716057090681.5,
+            "metaSortKey": -1716902213437.5,
             "_type": "request_group"
         },
         {
             "_id": "req_36d20fa7436f4fb78ea8cc6d147c46dc",
             "parentId": "fld_aa912cca1dcd4b399b889da84c7f0ec0",
-            "modified": 1716485291659,
+            "modified": 1716835778591,
             "created": 1716485104563,
             "url": "http://localhost:3000/perfisUsuarios",
             "name": "Consultar Perfis de Usuários",
@@ -487,7 +490,7 @@
             ],
             "authentication": {
                 "type": "bearer",
-                "token": ""
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImJkODA4YWMxLWU0ZTktNGRiMS04ZWM4LTQzMzA2YWM4NjUxOSIsImVtYWlsIjoicGF0cmlja0B0ZXN0ZS5jb20uYnIiLCJpYXQiOjE3MTY4MzU3NzEsImV4cCI6MTcxNjkyMjE3MX0.QBoa0R4H_FcION5emas-lhAc9rkJN6URyibnlUYvDK4"
             },
             "metaSortKey": -1715882965107,
             "isPrivate": false,
@@ -503,7 +506,7 @@
         {
             "_id": "req_9326b9ac62c9482ab7190e74986449af",
             "parentId": "fld_aa912cca1dcd4b399b889da84c7f0ec0",
-            "modified": 1716485299467,
+            "modified": 1716902650583,
             "created": 1716485104567,
             "url": "http://localhost:3000/perfisUsuarios/id/{id}",
             "name": "Consultar Perfis de Usuários por Id",
@@ -518,7 +521,10 @@
                     "value": "insomnia/9.2.0"
                 }
             ],
-            "authentication": {},
+            "authentication": {
+                "type": "bearer",
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImJkODA4YWMxLWU0ZTktNGRiMS04ZWM4LTQzMzA2YWM4NjUxOSIsImVtYWlsIjoicGF0cmlja0B0ZXN0ZS5jb20uYnIiLCJpYXQiOjE3MTY4MzU3NzEsImV4cCI6MTcxNjkyMjE3MX0.QBoa0R4H_FcION5emas-lhAc9rkJN6URyibnlUYvDK4"
+            },
             "metaSortKey": -1715882965007,
             "isPrivate": false,
             "pathParameters": [],
@@ -533,7 +539,7 @@
         {
             "_id": "req_763b2e71669243b9b980024351ef5d66",
             "parentId": "fld_aa912cca1dcd4b399b889da84c7f0ec0",
-            "modified": 1716485347279,
+            "modified": 1716902637183,
             "created": 1716485104573,
             "url": "http://localhost:3000/perfisUsuarios/id/{id}",
             "name": "Atualizar Perfis de Usuários por Id",
@@ -555,7 +561,10 @@
                     "value": "insomnia/9.2.0"
                 }
             ],
-            "authentication": {},
+            "authentication": {
+                "type": "bearer",
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImJkODA4YWMxLWU0ZTktNGRiMS04ZWM4LTQzMzA2YWM4NjUxOSIsImVtYWlsIjoicGF0cmlja0B0ZXN0ZS5jb20uYnIiLCJpYXQiOjE3MTY4MzU3NzEsImV4cCI6MTcxNjkyMjE3MX0.QBoa0R4H_FcION5emas-lhAc9rkJN6URyibnlUYvDK4"
+            },
             "metaSortKey": -1715860314044,
             "isPrivate": false,
             "pathParameters": [],
@@ -570,7 +579,7 @@
         {
             "_id": "req_dffb7706d3664ae29fab94dfcf60c0d5",
             "parentId": "fld_aa912cca1dcd4b399b889da84c7f0ec0",
-            "modified": 1716485333944,
+            "modified": 1716902646546,
             "created": 1716485104570,
             "url": "http://localhost:3000/perfisUsuarios/id/{id}",
             "name": "Deletar Perfis de Usuários por Id",
@@ -585,8 +594,187 @@
                     "value": "insomnia/9.2.0"
                 }
             ],
-            "authentication": {},
+            "authentication": {
+                "type": "bearer",
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImJkODA4YWMxLWU0ZTktNGRiMS04ZWM4LTQzMzA2YWM4NjUxOSIsImVtYWlsIjoicGF0cmlja0B0ZXN0ZS5jb20uYnIiLCJpYXQiOjE3MTY4MzU3NzEsImV4cCI6MTcxNjkyMjE3MX0.QBoa0R4H_FcION5emas-lhAc9rkJN6URyibnlUYvDK4"
+            },
             "metaSortKey": -1715837663081,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_510ab8bf5e844435a8acde1c3d386d7e",
+            "parentId": "fld_c5ef87820fe14162883b97bf7502b32c",
+            "modified": 1716902593635,
+            "created": 1716902245688,
+            "url": "http://localhost:3000/permissoes",
+            "name": "Cadastrar Permissões",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"nome\": \"\",\n\t\"descricao\": \"\"\n}"
+            },
+            "preRequestScript": "",
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.2.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1716902274788,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_c5ef87820fe14162883b97bf7502b32c",
+            "parentId": "wrk_59f445ec26d64be88f6e05aa10a18c28",
+            "modified": 1716902213425,
+            "created": 1716902213425,
+            "name": "Permissoes",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1716902213425,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_16e6475184b548a48def54b12a767c9d",
+            "parentId": "fld_c5ef87820fe14162883b97bf7502b32c",
+            "modified": 1716902383423,
+            "created": 1716902284961,
+            "url": "http://localhost:3000/permissoes",
+            "name": "Consultar Permissões",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "preRequestScript": "",
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.2.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1716902274688,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_0c7a00d5a57942fab9095e9680524ef4",
+            "parentId": "fld_c5ef87820fe14162883b97bf7502b32c",
+            "modified": 1716902391395,
+            "created": 1716902307535,
+            "url": "http://localhost:3000/permissoes/id/{id}",
+            "name": "Consultar Permissões por Id",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "preRequestScript": "",
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.2.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1716902274588,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_31a7d347671249b0af517a9975bbae95",
+            "parentId": "fld_c5ef87820fe14162883b97bf7502b32c",
+            "modified": 1716902601693,
+            "created": 1716902325544,
+            "url": "http://localhost:3000/permissoes/id/{id}",
+            "name": "Atualizar Permissões por Id",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"nome\": \"\",\n\t\"descricao\": \"\"\n}"
+            },
+            "preRequestScript": "",
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.2.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1716902274488,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_68f66a679b504a9eabf3ba0756268a6e",
+            "parentId": "fld_c5ef87820fe14162883b97bf7502b32c",
+            "modified": 1716902407089,
+            "created": 1716902347383,
+            "url": "http://localhost:3000/permissoes/id/{id}",
+            "name": "Deletar Permissões por Id",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "preRequestScript": "",
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.2.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1716902274388,
             "isPrivate": false,
             "pathParameters": [],
             "settingStoreCookies": true,
