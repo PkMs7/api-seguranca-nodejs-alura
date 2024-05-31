@@ -15,6 +15,11 @@ module.exports = (sequelize, DataTypes) => {
         as: 'permissoes_do_usuario',
         foreignKey: 'permissao_id'
       })
+      permissoes.belongsToMany(models.perfisUsuarios, {
+        through: models.perfis_permissoes,
+        as: 'permissoes_dos_perfis',
+        foreignKey: 'permissao_id'
+      })
     }
   }
   permissoes.init({
