@@ -21,6 +21,14 @@ class PermissoesController {
 
     }
 
+    static async buscarTodasPermissoes(req, res) {
+
+        const todasPermissoes = await permissoes.buscarTodasPermissoes()
+
+        res.status(200).json(todasPermissoes)
+
+    }
+
 }
 
 module.exports = PermissoesController

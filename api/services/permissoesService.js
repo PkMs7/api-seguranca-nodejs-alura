@@ -39,6 +39,14 @@ class PermissoesService {
 
     }
 
+    async buscarTodasPermissoes(){
+
+        const permissoes = await database.permissoes.findAll()
+        
+        return permissoes
+
+    }
+
 }
 
 module.exports = PermissoesService
