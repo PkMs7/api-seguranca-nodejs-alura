@@ -66,6 +66,24 @@ class PermissoesController {
 
     }
 
+    static async deletarPermissao(req, res) {
+
+        const { id } = req.params
+
+        try {
+
+            await permissoes.deletarPermissao(id)
+
+            res.status(200).send({ message: 'Permissão deletada com sucesso!' })
+            
+        } catch (error) {
+
+            res.status(400).send({ message: error.message })
+            
+        }
+
+    }
+
 }
 
 module.exports = PermissoesController
