@@ -7,7 +7,7 @@ router
     .post('/permissoes', PermissoesController.cadastrar)
     .get('/permissoes', PermissoesController.buscarTodasPermissoes)
     .get('/permissoes/id/:id', PermissoesController.buscarPermissaoPorId)
-    .put('/permissoes/id/:id')
+    .put('/permissoes/id/:id', PermissoesController.editarPermissao)
     .delete('/permissoes/id/:id')
 
 module.exports = router

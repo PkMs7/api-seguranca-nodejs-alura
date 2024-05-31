@@ -69,6 +69,27 @@ class PermissoesService {
 
     }
 
+    async editarPermissao(dto) {
+
+        const permissao = await this.buscarPermissaoPorId(dto.id)
+
+        try {
+
+            permissao.nome = dto.nome
+            permissao.descricao = dto.descricao
+
+            await permissao.save()
+
+            return permissao
+            
+        } catch (error) {
+
+            throw new Error('Permissão não pôde ser editada.')
+            
+        }
+
+    }
+
 }
 
 module.exports = PermissoesService
