@@ -42,8 +42,30 @@ class PermissoesService {
     async buscarTodasPermissoes(){
 
         const permissoes = await database.permissoes.findAll()
-        
+
         return permissoes
+
+    }
+
+    async buscarPermissaoPorId(id) {
+
+        const permissao = await database.permissoes.findOne({
+
+            where: {
+
+                id: id
+
+            }
+
+        })
+
+        if (!permissao) {
+
+            throw new Error('Permissão não cadastrada!')
+
+        }
+
+        return permissao
 
     }
 
