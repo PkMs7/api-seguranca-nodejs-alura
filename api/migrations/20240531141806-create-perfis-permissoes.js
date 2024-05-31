@@ -10,10 +10,22 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       perfil_id: {
-        type: Sequelize.UUID
+        type: Sequelize.UUID,
+        references: {
+          model: 'perfisUsuarios',
+          key: id
+        },
+        onUpdate: 'CASCADE',
+        onDelete: 'CASCADE'
       },
       permissao_id: {
-        type: Sequelize.UUID
+        type: Sequelize.UUID,
+        references: {
+          model: 'permissoes',
+          key: id
+        },
+        onUpdate: 'CASCADE',
+        onDelete: 'CASCADE'
       },
       createdAt: {
         allowNull: false,
