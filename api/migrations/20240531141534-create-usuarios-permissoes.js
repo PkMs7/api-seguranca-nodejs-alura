@@ -10,7 +10,13 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       usuario_id: {
-        type: Sequelize.UUID
+        type: Sequelize.UUID,
+        references: {
+          model: 'usuarios',
+          key: id
+        },
+        onUpdate: 'CASCADE',
+        onDelete: 'CASCADE'
       },
       permissao_id: {
         type: Sequelize.UUID
